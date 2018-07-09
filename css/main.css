@@ -1,0 +1,183 @@
+html, body, div, span, applet, object, iframe,
+h1, h2, h3, h4, h5, h6, p, blockquote, pre,
+a, abbr, acronym, address, big, cite, code,
+del, dfn, em, img, ins, kbd, q, s, samp,
+small, strike, strong, sub, sup, tt, var,
+b, u, i, center,
+dl, dt, dd, ol, ul, li,
+fieldset, form, label, legend,
+table, caption, tbody, tfoot, thead, tr, th, td,
+article, aside, canvas, details, embed, 
+figure, figcaption, footer, header, hgroup, 
+menu, nav, output, ruby, section, summary,
+time, mark, audio, video {
+	margin: 0;
+	padding: 0;
+	border: 0;
+	font-size: 100%;
+	font: inherit;
+	vertical-align: baseline;
+}
+/* HTML5 display-role reset for older browsers */
+article, aside, details, figcaption, figure, 
+footer, header, hgroup, menu, nav, section {
+	display: block;
+}
+body {
+	line-height: 1;
+}
+ol, ul {
+	list-style: none;
+}
+blockquote, q {
+	quotes: none;
+}
+blockquote:before, blockquote:after,
+q:before, q:after {
+	content: '';
+	content: none;
+}
+table {
+	border-collapse: collapse;
+	border-spacing: 0;
+}
+header {
+    width: 100%;
+    background: #ebebeb center no-repeat url("../image/header/Image.jpg");
+    background-size: cover;
+    padding-top: 38px;
+    padding-bottom: 613px;
+}
+.d-flex {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-bottom: 130px;
+}
+.container {
+    width: 940px;
+    margin: 0 auto;
+}
+.menu {
+    display: flex;
+}
+.logo a {
+    font-family: Georgia, 'Times New Roman', Times, serif;
+    font-size: 32px;
+    color: #4f4d6a;
+    text-decoration: none;
+}
+.italic {
+    font-style: italic;
+}
+.menu a {
+    color: #4f4d6a;
+    font-size: 12px;
+    line-height: 30px;
+    text-transform: uppercase;
+    font-weight: bold;
+    font-family: 'PT Sans',sans-serif;
+    text-decoration: none;
+    margin-left: 30px;
+}
+.d-flex-c {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+.header-content {
+    color: #4f4d6a;
+    text-transform: uppercase;
+    border-bottom: 1px solid #FFF;
+}
+.header-title {
+    font-style: italic;
+    font-size: 24px;
+    font-family: Georgia, 'Times New Roman', Times, serif;
+    overflow: hidden;
+    text-align: center;
+    width: 100%;
+}
+.header-title p {
+    display: inline-block;
+    vertical-align: middle;
+}
+.header-title:before,
+.header-title:after {
+    /* Обязательно указываем пустое свойство content, 
+    ** иначе псевдоэлементы не появятся на сайте */
+    content: "";
+    /* Указываем что наши линии будут строчно-блочные и 
+    ** выравнивание по высоте - по центру */
+    display: inline-block;
+    vertical-align: middle;
+    /* Задаем ширину 100% и выбираем высоту линии, 
+    ** в нашем примере она равна 4 пикселям */
+    width: 100%;
+    height: 1px;
+    /* Добавляем цвет для линии */
+    background-color: #FFF;
+    /* Добавляем пседоэлемантам возможность изменить 
+    ** позицию линии, для создания отступов от текста */
+    position: relative;
+}
+.header-title:before {
+    /* Смещаем левую линию на 100% влево, чтобы линия 
+    ** встала рядом с текстом слева */
+    margin-left: -100%;
+    /* Указываем в пикселях отступ линии от текста заголовка */
+    left: -24px;
+}
+.header-title:after {
+    /* Смещаем правую линию на 100% вправо, чтобы 
+    ** линия встала рядом с текстом справа */
+    margin-right: -100%;
+    /* Указываем в пикселях отступ линии от текста заголовка */
+    right: -24px;
+}
+.header-company {
+    font-weight: bold;
+    font-family: Georgia, 'Times New Roman', Times, serif;
+    font-size: 125px;
+    letter-spacing: -2px;
+    margin-top: 30px;
+}
+.header-text {
+    font-family: 'Open Sans', sans-serif;
+    font-size: 18px;
+    font-weight: bold;
+    margin-bottom: 30px;
+    margin-top: 25px;
+}
+.d-flex:last-child{
+    justify-content: center;
+}
+.d-flex:last-child a {
+    color: #FFF;
+    font-family: Georgia, 'Times New Roman', Times, serif;
+    font-style: italic;
+    font-size: 18px;
+    line-height: 38px;
+    text-decoration: none;
+    display: block;
+    width: 220px;
+    background-color: #6b6986;
+    text-align: center;
+    border-radius: 25px;
+    margin: 46px 10px 0;
+}
+.d-flex:last-child a:last-child {
+    background-color: #b39fac;
+}
+/* .round {
+    width: 220px;
+    height: 220px;
+    border-radius: 50%;
+    background-color: #efefef;
+}
+.round img {
+    position: relative;
+    left: 22px;
+    top: 22px;
+} */
